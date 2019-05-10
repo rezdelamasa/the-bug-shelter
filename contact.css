@@ -1,0 +1,136 @@
+.contact-page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-page__content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	/*ustify-content: center;
+	align-items: center;*/
+}
+
+.contact-page__wrapper {
+	flex-grow: 1;
+	background-color: white;
+	margin: 5% auto;
+	width: 85%;
+	/*max-width: 1366px;*/
+	/*max-height: 1024px;*/
+	border-radius: 5px;
+	padding: 20px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact__form {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	min-height: 100%;
+}
+
+.contact__row {
+	display: flex;
+	/*height: 20%;*/
+}
+
+.contact__section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.contact__section--message {
+	flex-grow: 1;
+	height: 100%;
+}
+
+.contact__column {
+	height: 100%;
+}
+
+.contact__label {
+	margin-bottom: 20px;
+	font-size: 2rem;
+}
+
+.contact__input {
+	/*flex-grow: 1;*/
+	border: none;
+	font-size: 2rem;
+	background-color: #f0f0f0;
+	height: 70px;
+	padding: 0;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.contact__textarea {
+	flex-grow: 1;
+	border: none;
+	font-size: 2rem;
+	background-color: #f0f0f0;
+	padding: 20px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	min-height: 300px;
+}
+
+.contact__button {
+	height: 60px;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: none;
+	background: rgb(43,192,223);
+	background: -moz-linear-gradient(45deg, rgba(43,192,223,1) 33%, rgba(15,114,188,1) 66%);
+	background: -webkit-linear-gradient(45deg, rgba(43,192,223,1) 33%, rgba(15,114,188,1) 66%);
+	background: linear-gradient(45deg, rgba(43,192,223,1) 33%, rgba(15,114,188,1) 66%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2bc0df",endColorstr="#0f72bc",GradientType=1);
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: white;
+	width: 200px;
+}
+
+.footer {
+	background-color: transparent;
+}
+
+@media only screen and (max-width: 1024px) {
+	.contact__row {
+		flex-direction: column;
+	}
+
+	.contact__section {
+		padding: 10px;
+	}
+
+	.contact__input {
+		height: 50px;
+		font-size: 1.6rem;
+	}
+
+	.contact__label {
+		font-size: 1.6rem;
+	}
+
+	.contact__textarea {
+		font-size: 1.6rem;
+	}
+
+	.contact__button {
+		font-size: 2rem;
+		height: 40px;
+		width: 120px;
+		margin-top: 20px;
+	}
+}

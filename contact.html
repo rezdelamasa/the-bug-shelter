@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Bug Shelter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+	<link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="bugseal.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+<body>
+	<div class="container">
+		<div class="contact-page">
+			<div class="navbar">
+				<a href="index.html" class="navbar__brand"><img class="navbar__logo" src="./images/image.svg"></a>
+				<div class="navbar__list-wrapper">
+					<button class="hamburger hamburger--collapse" type="button">
+					  <span class="hamburger-box">
+					    <span class="hamburger-inner"></span>
+					  </span>
+					  <span class="hamburger-box hamburger-box--underlay">
+					    <span class="hamburger-inner"></span>
+					  </span>
+					</button>
+					<ul class="navbar__list">
+						<li class="navbar__item">
+							<a href="./rigid-frame.html" class="navbar__link">Rigid Frame</a>
+						</li>
+						<li class="navbar__item">
+							<a href="./lightning-bug.html" class="navbar__link">Lightning Bug</a>
+						</li>
+						<li class="navbar__item">
+							<a href="tsunami.html" class="navbar__link">Tsunami</a>
+						</li>
+						<li class="navbar__item navbar__item--last">
+							<a href="contact.html" class="navbar__link">Contact</a>
+						</li>
+					</ul>
+					<div class="navbar__submenu">
+						<ul class="navbar__sublist">
+							<li class="navbar__subitem"><a class="navbar__sublink" href="#">Rigid Frame Bug Seal</a></li>
+							<li class="navbar__subitem"><a class="navbar__sublink" href="#">Lightning Bug High Speed Door</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="contact-page__content">
+				<div class="contact-page__wrapper">
+					<form id="contact-form" class="contact__form" method="post">
+						<input type="hidden" name="contact_number">
+						<div class="contact__row">
+							<div class="contact__section contact__column">
+								<label class="contact__label" for="user_name">Tell Us Your Name*</label>
+								<input id="user_name" class="contact__input" type="text" name="user_name" placeholder="John Doe">
+							</div>
+							<div class="contact__section contact__column">
+								<label class="contact__label" for="user_email">Email Address*</label>
+								<input id="user_email" class="contact__input" type="text" name="user_email" placeholder="email@address.com">
+							</div>
+						</div>
+						<div class="contact__row">
+							<div class="contact__section">
+								<label class="contact__label" for="company">Company Name</label>
+								<input id="company" class="contact__input" type="text" name="company" placeholder="The Bug Shelter">
+							</div>
+							<div class="contact__section contact__column">
+								<label class="contact__label" for="number">Phone Number</label>
+								<input id="number" class="contact__input" type="number" name="number" placeholder="(123) 456 - 7890">
+							</div>
+						</div>
+						<div class="contact__section contact__section--message">
+							<label class="contact__label" for="contact">What Would You Like To Tell Us?</label>
+							<textarea id="text"class="contact__textarea" type="text" name="contact" placeholder="Your Message..."></textarea>
+						</div>
+						<button class="contact__button">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.1.0/email.min.js">
+		(function(){
+           emailjs.init("user_yZKgIdBWTvdXGn5DybQM2");
+        })();
+	</script>
+	<script type="text/javascript" src="scripts.js">
+		(function(){
+           emailjs.init("user_yZKgIdBWTvdXGn5DybQM2");
+        })();
+	</script>
+</body>
+</html>
