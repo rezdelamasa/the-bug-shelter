@@ -14,12 +14,16 @@ html, body {
 }
 
 .navbar__item {
-	margin: 0;
+	/*margin: 0;*/
 }
 
 .navbar__link {
-	color: #0f72bc;
+	color: white;
 	text-shadow: unset;
+}
+
+.navbar__link.navbar__link--active {
+	color: #0f72bc;
 }
 
 .navbar__link:hover {
